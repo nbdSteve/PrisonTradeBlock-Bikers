@@ -1,0 +1,8 @@
+name: PrisonTradeBlock
+version: 1.0-SNAPSHOT
+main: dev.nuer.ptb.PrisonTradeBlock
+api-version: 1.13
+prefix: PTB
+authors: [Nuer]
+description: Private prison trade blocking plugin develop for Bikers
+website: https://nuer.dev
