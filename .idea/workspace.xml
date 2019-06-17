@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="PTB" />
+      <artifact name="PrisonTradeBlock" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b6acbff-9a79-4a49-87a8-43e87c72c7dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/PTB.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/cmd/PtbCmd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/PTB.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/PrisonTradeBlock.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/PrisonTradeBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/PrisonTradeBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/ApplyUUIDToItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/ApplyUUIDToItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/ApplyUUIDToItemEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/ApplyUUIDToItemEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/FileManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/SetupManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/SetupManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/ItemUtil.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/UUIDutil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/UUIDutil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dev/nuer/ptb/PrisonTradeBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dev/nuer/ptb/PrisonTradeBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ptb.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/prison-trade-block.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,71 +33,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/ApplyUUIDToItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1536">
-              <caret line="64" column="70" selection-start-line="64" selection-start-column="70" selection-end-line="64" selection-end-column="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/SetupManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/PrisonTradeBlock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ptb.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/UUIDutil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -112,17 +52,22 @@
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/nbtapi/NBTCompound.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/nbtapi/ReflectionMethod.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/ColorUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/FileManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/ItemUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/MessageUtil.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ptb.yml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/SetupManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/PrisonTradeBlock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/UUIDutil.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/PlayerTradeEventBlocker.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/PlayerPickupHandle.java" />
         <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/ApplyUUIDToItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/cmd/PtbCmd.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/SetupManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/FileManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/UUIDutil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/PrisonTradeBlock.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/messages.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/ApplyUUIDToItemEventHandler.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/prison-trade-block.yml" />
       </list>
     </option>
   </component>
@@ -198,15 +143,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ptb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PrisonTradeBlock" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PrisonTradeBlock" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ptb" type="462c0819:PsiDirectoryNode" />
-              <item name="blocker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PrisonTradeBlock" type="b2602c69:ProjectViewProjectNode" />
@@ -295,9 +231,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -326,9 +261,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/nbtapi/NBTReflectionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -397,66 +329,93 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/YamlFileUtil.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/FileManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/PlayerTradeEventBlocker.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/PlayerPickupHandle.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/ApplyUUIDToItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/cmd/PtbCmd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="75" column="40" selection-start-line="75" selection-start-column="40" selection-end-line="75" selection-end-column="40" />
+        <state relative-caret-position="264">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="64" column="70" selection-start-line="64" selection-start-column="70" selection-end-line="64" selection-end-column="70" />
+        <state relative-caret-position="1392">
+          <caret line="58" column="39" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#867#868#0" expanded="true" />
+            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1340#1341#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/managers/SetupManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="360">
+          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/PrisonTradeBlock.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/UUIDutil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
+        <state relative-caret-position="1200">
+          <caret line="50" column="24" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ptb.yml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/PrisonTradeBlock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="22" />
+        <state relative-caret-position="552">
+          <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/utils/UUIDutil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/prison-trade-block.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="168">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/messages.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dev/nuer/ptb/blocker/ApplyUUIDToItemEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="50" column="74" selection-start-line="50" selection-start-column="74" selection-end-line="50" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -469,7 +428,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>PTB</last-edited>
+          <last-edited>PrisonTradeBlock</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

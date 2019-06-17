@@ -1,5 +1,5 @@
 name: PrisonTradeBlock
-version: ${project.version}
+version: 0.1.5
 main: dev.nuer.ptb.PrisonTradeBlock
 api-version: 1.13
 prefix: PTB

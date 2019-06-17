@@ -1,0 +1,13 @@
+# PrisonTradeBlock developed by nbdSteve#0583
+
+# These are all of the item types that will have the players UUID applied to them
+untradeable-item-types:
+  - 'diamond_pickaxe'
+  - 'diamond_sword'
+  - 'diamond_axe'
+  - 'diamond_spade'
+  - 'diamond_hoe'
+  - 'diamond_helmet'
+  - 'diamond_chestplate'
+  - 'diamond_leggings'
+  - 'diamond_boots'

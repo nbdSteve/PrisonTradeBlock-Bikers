@@ -15,7 +15,7 @@ public class SetupManager {
      * @param fileManager FileManager, the plugins file manager
      */
     public static void setupFiles(FileManager fileManager) {
-        fileManager.add("config", "ptb.yml");
+        fileManager.add("config", "prison-trade-block.yml");
         fileManager.add("messages", "messages.yml");
     }
 
