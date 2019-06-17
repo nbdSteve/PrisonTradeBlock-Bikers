@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PTB">
+    <output-path>$USER_HOME$/Desktop/minecraft/server stuff/Server Files/plugins</output-path>
+    <root id="archive" name="PTB.jar">
+      <element id="module-output" name="PrisonTradeBlock" />
+    </root>
+  </artifact>
+</component>

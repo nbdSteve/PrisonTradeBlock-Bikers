@@ -29,7 +29,6 @@ public class UUIDutil {
 
     public static ItemStack apply(UUID uuid, NBTItem nbtItem) {
         try {
-            if (nbtItem.getBoolean("ptb.uuid-applied")) return nbtItem.getItem();
             nbtItem.setBoolean("ptb.uuid-applied", true);
             nbtItem.setString("ptb.player-uuid", uuid.toString());
         } catch (Exception e) {

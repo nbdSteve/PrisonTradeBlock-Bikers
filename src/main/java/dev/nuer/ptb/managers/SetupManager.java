@@ -1,5 +1,6 @@
 package dev.nuer.ptb.managers;
 
+import dev.nuer.ptb.blocker.ApplyUUIDToItemEventHandler;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 
@@ -25,5 +26,6 @@ public class SetupManager {
      */
     public static void registerEvents(Plugin instance) {
         PluginManager pm = instance.getServer().getPluginManager();
+        pm.registerEvents(new ApplyUUIDToItemEventHandler(), instance);
     }
 }
