@@ -1,5 +1,6 @@
 # PrisonTradeBlock developed by nbdSteve#0583
-
+# Picks that have a fortune level less than this will not be blocked
+fortune-block-level: 300
 # These are all of the item types that will have the players UUID applied to them
 untradeable-item-types:
   - 'diamond_pickaxe'

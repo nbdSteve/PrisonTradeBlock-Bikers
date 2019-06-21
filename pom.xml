@@ -6,7 +6,7 @@
 
     <groupId>dev.nuer</groupId>
     <artifactId>PrisonTradeBlock</artifactId>
-    <version>0.1.5</version>
+    <version>0.2.1</version>
     <packaging>jar</packaging>
 
     <name>PrisonTradeBlock</name>

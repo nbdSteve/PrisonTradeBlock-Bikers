@@ -5,6 +5,7 @@ import dev.nuer.ptb.nbtapi.NBTItem;
 import dev.nuer.ptb.utils.MessageUtil;
 import dev.nuer.ptb.utils.UUIDutil;
 import org.bukkit.Material;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -35,6 +36,16 @@ public class ApplyUUIDToItemEventHandler implements Listener {
         boolean valid_item = false;
         for (String item_type : FileManager.get("config").getStringList("untradeable-item-types")) {
             if (event.getCurrentItem().getType().toString().equalsIgnoreCase(item_type)) {
+                if (event.getCurrentItem().getType().toString().contains("PICKAXE")) {
+                    if (event.getCurrentItem().hasItemMeta()) {
+                        if (event.getCurrentItem().getItemMeta().hasEnchant(Enchantment.LOOT_BONUS_BLOCKS)) {
+                            if (event.getCurrentItem().getItemMeta().getEnchantLevel(Enchantment.LOOT_BONUS_BLOCKS)
+                            < FileManager.get("config").getInt("fortune-block-level")) {
+                                return;
+                            }
+                        }
+                    }
+                }
                 valid_item = true;
                 break;
             }
