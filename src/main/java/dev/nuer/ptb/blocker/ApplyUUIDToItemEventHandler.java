@@ -77,6 +77,16 @@ public class ApplyUUIDToItemEventHandler implements Listener {
         boolean valid_item = false;
         for (String item_type : FileManager.get("config").getStringList("untradeable-item-types")) {
             if (event.getItem().getType().toString().equalsIgnoreCase(item_type)) {
+                if (event.getItem().getType().toString().contains("PICKAXE")) {
+                    if (event.getItem().hasItemMeta()) {
+                        if (event.getItem().getItemMeta().hasEnchant(Enchantment.LOOT_BONUS_BLOCKS)) {
+                            if (event.getItem().getItemMeta().getEnchantLevel(Enchantment.LOOT_BONUS_BLOCKS)
+                                    < FileManager.get("config").getInt("fortune-block-level")) {
+                                return;
+                            }
+                        }
+                    }
+                }
                 valid_item = true;
                 break;
             }
@@ -108,6 +118,16 @@ public class ApplyUUIDToItemEventHandler implements Listener {
         boolean valid_item = false;
         for (String item_type : FileManager.get("config").getStringList("untradeable-item-types")) {
             if (event.getItemDrop().getItemStack().getType().toString().equalsIgnoreCase(item_type)) {
+                if (event.getItemDrop().getItemStack().getType().toString().contains("PICKAXE")) {
+                    if (event.getItemDrop().getItemStack().hasItemMeta()) {
+                        if (event.getItemDrop().getItemStack().getItemMeta().hasEnchant(Enchantment.LOOT_BONUS_BLOCKS)) {
+                            if (event.getItemDrop().getItemStack().getItemMeta().getEnchantLevel(Enchantment.LOOT_BONUS_BLOCKS)
+                                    < FileManager.get("config").getInt("fortune-block-level")) {
+                                return;
+                            }
+                        }
+                    }
+                }
                 valid_item = true;
                 break;
             }

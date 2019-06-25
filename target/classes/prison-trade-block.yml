@@ -12,3 +12,8 @@ untradeable-item-types:
   - 'diamond_chestplate'
   - 'diamond_leggings'
   - 'diamond_boots'
+# These commands will be blocked if the player has an untradeable item in their inventory
+# <-- You may need to add command aliases as well -->
+blocked-commands:
+  - 'trade'
+  - 'ah'
